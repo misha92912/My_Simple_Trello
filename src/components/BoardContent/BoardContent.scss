@@ -1,0 +1,75 @@
+@import '../../settings';
+
+.board-columns {
+    display: flex;
+    margin: 0 $gap $gap 0;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    
+    &::-webkit-scrollbar {
+      -webkit-appearance: none;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 11px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 0.24);
+      border-radius: 5px;
+      background-clip: padding-box;
+    }
+
+    .column-drop-preview{
+      background-color: rgba(150, 150, 200, 0.2);
+      border: 1px dashed rgb(255, 255, 255);
+      margin: 0px 15px 5px 5px;
+      transform: translate(10px, 0px);
+    }
+
+    .add-new-column {
+      min-width: 250px;
+      height: 40px;
+      line-height: 32px;
+      padding: 4px 0 4px 15px;
+      cursor: pointer;
+      color: white;
+      margin-left: $gap;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: $card-border-radius;
+      background-color: hsla(0, 0, 100, .14);
+    
+      &:hover {
+        background-color: hsla(0, 0, 100, .34);
+      }
+    }
+    .content-add-column {
+      min-width: 250px;
+      height: fit-content;
+      padding: 5px;
+      margin-left: 10px;
+      background-color: hsla(0, 0, 100, .34);
+      border-radius: $card-border-radius;
+
+      .group-btn {
+        
+        display: flex;
+        padding-top: 10px;
+        align-items: center;
+
+        i {
+          font-size: 30px;
+          padding-left: 10px;
+          cursor: pointer;
+        }
+      }
+
+      .form-control {
+        min-width: unset!important;
+      }
+    }
+      
+    
+    
+  }

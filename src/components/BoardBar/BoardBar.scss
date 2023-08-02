@@ -1,0 +1,10 @@
+@import '../../settings';
+
+.navbar-board {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    background-color: $navbar-board-bg-color;
+    padding-left: 2em;
+    margin-bottom: 20px;
+  }
